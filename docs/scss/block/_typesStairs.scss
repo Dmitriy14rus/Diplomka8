@@ -1,0 +1,124 @@
+.typesStairs {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__heading-title {
+        position: relative;
+        font-size: 36px;
+        @extend %bold;
+
+    }
+
+    &__heading-title::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+        top: 21px;
+        right: 197px;
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    
+    &__btn-prev path:hover,
+    &__btn-next path:hover {
+        cursor: pointer;
+        stroke: $dark;
+        transition: all .2s ease-in-out;
+        
+    }
+   
+
+    &__stick {
+        height: 34px;
+        width: 1.8px;
+        background-color: $dark;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    &__card {
+        border: 2px solid $white;
+        width: 386px;
+        height: 540px;
+        margin: 0px 16px;
+        text-align: center;
+    }
+
+    &__img {
+        height: 335px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img img {
+        width: 294px;
+
+    }
+
+    &__info {
+        // padding-top: 20px;
+        background-color: $white;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 221px;
+    }
+
+    &__title {
+        
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+        padding-top: 20px;
+    padding-bottom: 6px;
+    }
+
+    &__text {
+        @extend %regular;
+        padding-bottom: 15px;
+
+    }
+
+    &__text span {
+
+        padding-left: 7px;
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+    }
+
+    &__btn {
+        padding-bottom: 56px;
+    }
+
+    &__btn button {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background: $orange-btn;
+        color: $white2;
+    }
+
+    &__btn button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+}

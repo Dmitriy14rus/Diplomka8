@@ -1,0 +1,120 @@
+.examples {
+    position: relative;
+    background: $white;
+    height: 850px;
+}
+
+.examples::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: $orange-bg;
+    z-index: 0;
+}
+
+
+.examples {
+    &__mask {
+        background: $orange-bg;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 386px;
+        height: 100%;
+    }
+
+    &__title {
+        position: absolute;
+        width: 252px;
+        padding-top: 110px;
+        font-size: 36px;
+        @extend %bold;
+        
+    }
+
+    &__swiper {
+        content: "";
+        position: absolute;
+        top: 175px;
+    }
+
+    &__swiper-wrapper {
+        
+    }
+
+    &__swiper-slide {
+        padding-top: 40px;
+        display: flex;
+    }
+
+    &__list {}
+
+    &__list-title {
+        font-size: 23px;
+        @extend %semibold;
+    }
+
+    &__ul {}
+
+    &__item {
+        color: rgba(32, 32, 32, 0.70);
+        line-height: 210%;
+    }
+
+    &__item span {
+        color: $dark;
+        line-height: 210%;
+        @extend %semibold;
+    }
+
+    &__price {
+        font-size: 23px;
+        color: $dark;
+        line-height: 160%;
+        @extend %semibold;
+        text-transform: uppercase;
+    }
+
+    &__btn {}
+
+    &__button {
+        width: 263px;
+        height: 50px;
+        background: $orange-btn;
+        border-radius: 2px;
+    }
+
+    &__img {
+        
+    }
+
+    &__img-img {
+        position: relative;
+        top: 0px;
+        width: 490px;
+        height: 630px;
+    }
+
+    &__swiper-pagination {}
+
+    &__nav {}
+
+    &__swiper-button-prev {}
+
+    &__stick {}
+
+    &__swiper-button-next {}
+}
+
+.container {}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}

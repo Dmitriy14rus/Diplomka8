@@ -1,0 +1,242 @@
+.header {
+    position: relative;
+    margin-bottom: 180px;
+    background: $white;
+
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: $orange-bg;
+    z-index: 0;
+}
+
+
+
+.header {
+
+
+    &__top {
+        padding-top: 25px;
+        padding-bottom: 81px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+
+    &__mask {
+        position: absolute;
+        background-color: $orange-bg;
+        width: 350px;
+        height: 100%;
+
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        z-index: 1;
+
+    }
+
+    &__img {
+        height: 50px;
+    }
+
+    &__text {
+        width: 129px;
+        line-height: 1.40;
+        @extend %semibold;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 74px
+    }
+
+    &__info {
+        position: relative;
+    }
+
+    &__phone {
+        @extend %semibold;
+        font-size: 18px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: -1;
+        right: 0;
+        background: $orange-btn;
+        width: 170px;
+        height: 40px;
+        border-radius: 2px;
+        color: $white;
+    }
+    &__button:hover{
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+
+    &__home {
+        position: relative;
+        display: flex;
+        right: 127px;
+        gap: 104px;
+        padding-bottom: 159px;
+    }
+
+    &__left-box {
+        position: relative;
+
+    }
+
+    &__detailed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 413px;
+        width: 446px;
+        height: 220px;
+        background: $dark;
+        gap: 26px;
+    }
+
+    &__detailed-title {
+        height: 64px;
+        color: $white;
+        font-size: 23px;
+        line-height: 140%;
+        padding-left: 69px;
+        padding-right: 15px;
+
+        &-text {
+            @extend %semibold;
+            color: $white;
+            font-size: 23px;
+        }
+    }
+
+    &__btn {
+        padding-right: 116px;
+    }
+
+    &__detailed-btn {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+
+    &__detailed-btn:hover{
+        background: $orange-btn;
+        transition: all .2s ease-in-out;
+    }
+
+
+}
+.header__right-box {
+    position: relative;
+    top: 55px;
+} 
+.right-box {
+    
+    &__text {
+        color: $orange-bg;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        
+    }
+
+    &__text1 {
+        font-size: 12px;
+        color: $orange-btn;
+        @extend %bold;
+        letter-spacing: 0.6px;
+    }
+
+    &__text2 {
+        font-size: 12px;
+        color: $orange-btn;
+        @extend %bold;
+        letter-spacing: 0.6px;
+    }
+
+    &__title {
+        width: 384px;
+        height: 162px;
+        font-size: 45px;
+        @extend %bold;
+        letter-spacing: .02em;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+
+    &__strip {
+        position: relative;
+        right: 287px;
+        width: 517px;
+        height: 3px;
+        background: $orange-bg;
+        margin-bottom: 35px;
+    }
+
+    &__info {
+        width: 315px;
+        line-height: 160%;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        width: 209px;
+        height: 50px;
+        border-radius: 2px;
+        background-color: $orange-btn;
+        color:$white;
+    }
+
+    &__btn:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    &__items-1 {
+        margin-right: 37px;
+    }
+
+    &__items-2 {
+        margin-right: 37px;
+    }
+
+    &__items-3 {
+        margin-right: 35px;
+    }
+
+    &__items-4 {
+        margin-right: 33px;
+    }
+}
